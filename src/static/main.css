@@ -1,0 +1,310 @@
+body {
+    overflow-x: hidden;
+  }
+
+  .sky{
+    /* background-color: rgb(166, 221, 247); */
+    /* background-color:  rgb(130, 222, 238); */
+    background: linear-gradient(0deg, rgb(166, 221, 247), rgb(130, 222, 238));
+    /* background: linear-gradient(0deg, rgb(130, 222, 238), rgb(97, 149, 246)); */
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    top: 50px;
+  }
+
+  .land{
+    position: relative;
+    bottom: 9px;
+    right: 6px;
+    z-index: 1;
+  }
+
+  .hill{
+    position: relative;
+    right: 6px;
+    bottom: 130px; 
+    z-index: 0;
+  }
+
+  .frame {
+    background-color: beige;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .windowsill {
+    background-color: white;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    top: 50px;
+  }
+
+  .edge {
+    background-color: rgb(186, 152, 107);
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    height: 50px;
+    top: 20px;
+    border-radius: 10%;
+  }
+
+  .flower-pot{
+    background-color: rgb(248, 155, 93);
+    position: relative;
+    bottom: 130px;
+    right: 44px;
+    margin: 0 auto;
+    width: 190px;
+    height: 200px;
+    border-radius: 0 0 20% 20%;
+    z-index: 2;
+  }
+
+  .pot-shading{
+    background-color: rgb(232, 126, 77);
+    position: relative;
+    margin: 0 auto;
+    top: 10px;
+    width: 160px;
+    height: 20px;
+    border-radius: 0 0 50% 50%;
+  }
+
+  .stem{
+    background-color: #71ce51;
+    height: 150px;
+    width: 20px;
+    position: relative;
+    margin: 0 auto;
+    bottom:140px;
+  }
+
+  .drawings{
+    height: 260px;
+    width: 160px;
+    position: relative;
+    margin: 0 auto;
+    bottom: 325px;
+    left: 50px;
+    transform: rotate(30deg) 
+  }
+
+  #sensor:hover{
+    cursor: pointer;
+  }
+  
+  .container {
+    width: 500px;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+/* Clouds 
+- https://cssdeck.com/labs/moving-clouds-animation
+*/
+#clouds {
+  top: 100px;
+  position: relative;
+  -webkit-animation: move 20s infinite linear;  
+  -moz-animation: move 20s infinite linear;  
+  -ms-animation: move 20s infinite linear;
+  z-index: 0;
+}
+
+#clouds2 {
+  position: relative;
+  -webkit-animation: backup 14s infinite linear;
+  -moz-animation: backup 14s infinite linear;
+  -ms-animation: backup 14s infinite linear;
+  z-index: 1;
+}
+
+.cloud1, .cloud2, .cloud3 { 
+  opacity: 1;  
+}
+
+.cloud1 {
+  width: 200px;
+  height: 60px;
+  background: whitesmoke;
+  position: absolute;
+  top: 80px;
+  
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+  
+}
+
+.cloud1:after {
+  content: '';
+  position: absolute;
+  background: whitesmoke;
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  left: 20px;
+  
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+
+}
+
+.cloud1:before {
+  content: '';
+  position: absolute;
+  background: whitesmoke;
+  width: 100px;
+  height: 100px;
+  top: -60px;
+  right: 30px;
+  
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+}
+
+.cloud2 {
+  width: 100px;
+  height: 30px;
+  background:whitesmoke;
+  position: absolute;
+  top: 180px;
+  left: 400px;
+  
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+}
+
+.cloud2:after {
+  content: '';
+  position: absolute;
+  background: whitesmoke;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: 10px;
+  
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+}
+
+.cloud2:before {
+  content: '';
+  position: absolute;
+  background: whitesmoke;
+  width: 50px;
+  height: 50px;
+  top: -30px;
+  right: 15px;
+  
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+
+}
+
+.cloud3 {
+  width: 200px;
+  height: 60px;
+  background: whitesmoke;
+  position: absolute;
+  top: 100px;
+  left: 740px;
+  
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+}
+
+.cloud3:after {
+  content: '';
+  position: absolute;
+  background: whitesmoke;
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  left: 20px;
+  
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+}
+
+.cloud3:before {
+  content: '';
+  position: absolute;
+  background: whitesmoke;
+  width: 100px;
+  height: 100px;
+  top: -60px;
+  right: 30px;
+  
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+}
+
+@-webkit-keyframes move {
+  0% {left: 0px;}
+  49% {left: 940px; opacity: 1;}
+  50% {left: 940px; opacity: 0;}
+  51% {left: -940px; opacity: 0;} 
+  52% {left: -940px; opacity: 1;} 
+  100% {left: 0px;} 
+}
+
+@-webkit-keyframes backup {
+  0% {left: -940px;}
+  100% {left: 940px;}  
+
+}  
+
+@-moz-keyframes move {
+  0% {left: 0px;}
+  49% {left: 940px; opacity: 1;}
+  50% {left: 940px; opacity: 0;}
+  51% {left: -940px; opacity: 0;} 
+  52% {left: -940px; opacity: 1;} 
+  100% {left: 0px;} 
+}
+
+@-moz-keyframes backup {
+  0% {left: -940px;}
+  100% {left: 940px;}  
+
+}  
+
+@keyframes move {
+  0% {left: 0px;}
+  49% {left: 940px; opacity: 1;}
+  50% {left: 940px; opacity: 0;}
+  51% {left: -940px; opacity: 0;} 
+  52% {left: -940px; opacity: 1;} 
+  100% {left: 0px;} 
+}
+
+@keyframes backup {
+  0% {left: -940px;}
+  100% {left: 940px;}  
+
+}  
+
+#clouds .cloud1, #clouds .cloud2, #clouds .cloud2:after, #clouds .cloud2:before, #clouds .cloud3, #clouds .cloud1:after, #clouds .cloud1:before, #clouds .cloud3:before, #clouds .cloud3:after {
+	background: whitesmoke;
+}
+
+  
+
+

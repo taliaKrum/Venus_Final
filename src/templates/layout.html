@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+
+  <!-- jquery -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'animation.js') }}"></script>
+
+    <title>Venus Fly Trap</title>
+  </head>
+  <body>
+      <div class="frame">
+        <div class="windowsill">
+            <div class="sky">
+                <div class="container">
+                    <div id="clouds">
+                        <div class="cloud1"></div>
+                        <div class="cloud2"></div>
+                        <div class="cloud3"></div>
+                    </div>
+                    <div id="clouds2">
+                        <div class="cloud1"></div>
+                        <div class="cloud2"></div>
+                        <div class="cloud3"></div>
+                    </div>
+                </div>
+                <div class="land">
+                    <svg width="512px" viewBox="0 0 113.39 24.09">
+                        <path id="hills" fill="#4CB5AB" 
+                        d="M 111.971, 23.82 V 3.328 C 84.865 -6.96, 12.407, 11.765, 1.419, 14.708 v 100 H 500 z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="hill">
+                    <svg width="500px" viewBox="0 0 113.39 17.86">
+                        <path id="hill" fill="#B0F499"  
+                        d="M 111.971, 12.132 c -4.609 -0.766 -8.889 -1.889 -12.432 -3.579 C 86.127 -0.36, 71.48 -3.606, 43.082, 6.31 c -6.086, 0.811 -7.853, 0.51 -17.234 -2.951 C 18.487, 0.644, 8.764, 1.176, 1.419, 2.621 v 15.017 h 110.551 V 12.132 z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="flower-pot">
+                <div class="pot-shading">
+                    <div class="stem"></div>
+                </div>
+                <div class="fly-trap">
+                    <img id="sensor" class="drawings" src="../static/images/Group 9.svg">
+                </div>
+            </div>
+        </div>
+        <div class="edge"></div>
+      </div>
+  </body>
+</html>
