@@ -28,8 +28,14 @@ Hardware Setup -
   * ![IMG_4352](https://user-images.githubusercontent.com/69936719/167274913-35b7245d-0f04-4327-a354-7f9bf2ad53c6.jpeg)
 * After all the pieces were ready, I placed the ESP32 and breadboard inside the flower pot, strung the wires through the holes in the top and used hot glue to assemble the plant.
   * ![IMG_4449](https://user-images.githubusercontent.com/69936719/167274991-7c29c151-30f5-4b79-80ea-b13b4611c6d4.jpeg)
-  * ![IMG_4454](https://user-images.githubusercontent.com/69936719/167274998-fad82268-8191-4cc9-958d-09baec75a095.png)
+  * ![IMG_4453](https://user-images.githubusercontent.com/69936719/167275046-541cde08-68a3-4bea-b843-4a22f78ea601.jpeg)
 
-
-
+Software Setup-
+* I worked with PlatformIO to write the programs for this assignment
+* The files for the website (server.py, static folder, templates folder) as well as the program for the ESP32 (main.cpp) can be found in the src folder in this repository
+* The servo motors were connected to the same pin so they could work simultaneously
+* the conductive tape/wires are connected to touch sensor pins 
+* Make sure to build main.cpp and upload it to an ESP32 and start up the website with python3 server.py
+* Website:
+<img width="1298" alt="Screen Shot 2022-05-07 at 7 29 22 PM" src="https://user-images.githubusercontent.com/69936719/167275231-a0ace6ac-5e4f-46e1-a2df-bc0fbec91634.png">
 
