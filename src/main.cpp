@@ -1,5 +1,8 @@
 #include <Arduino.h>
+#include <ArduinoJson.h>
 #include <ESP32Servo.h>
+// https://techtutorialsx.com/2017/04/27/esp32-creating-json-message/
+// https://arduinojson.org/v6/doc/upgrade/
 
 int threshold = 40;
 bool touch1detected = false;
@@ -26,25 +29,26 @@ void setup() {
   myservo.attach(servoPin, 500, 2500); // attaches the servo on servoPin to the servo object
   Serial.begin(115200);
   delay(1000); // give me time to bring up serial monitor
-  Serial.println("ESP32 Touch Interrupt Test");
+  // Serial.println("ESP32 Touch Interrupt Test");
   touchAttachInterrupt(T2, gotTouch1, threshold);
   touchAttachInterrupt(T9, gotTouch2, threshold);
 }
 
 void loop() {
   if(touch1detected || touch2detected){
-      //if touch sensor, then open close twice 
-      //could do animation on website that fly goes into mouth 
-      for (posVal = 130; posVal >= 60; posVal -= 1) { // goes from 180 degrees to 0 degrees
+      //if touch sensor, then open and close sculpture and website animation
+      Serial.println("true");
+      //OPEN AND CLOSE SCULPTURE
+      for (posVal = 130; posVal >= 60; posVal -= 1) { // goes from 130 degrees to 60 degrees
         myservo.write(posVal); // tell servo to go to position in variable 'pos'
         delay(15);                   // waits 15ms for the servo to reach the position
       }
-      for (posVal = 60; posVal <= 130; posVal += 1) { // goes from 0 degrees to 180 degrees // in steps of 1 degree
+      for (posVal = 60; posVal <= 130; posVal += 1) { // goes from 60 degrees to 130 degrees // in steps of 1 degree
         myservo.write(posVal); // tell servo to go to position in variable 'pos' 
         delay(15); // waits 15ms for the servo to reach the position
       }
-      touch1detected = false;
+      touch1detected = false; //this makes sure the sculpture only opens and closes once
       touch2detected = false;
+      // Serial.println("false");
   }
-
 }

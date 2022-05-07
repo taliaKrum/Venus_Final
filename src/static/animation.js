@@ -33,70 +33,57 @@ async function readLoop() {
         break;
       }
       if (value) {
-          for (i in value) {
-              let ch = value.charAt(i)
-              if (!began) {
-                  if (ch === "\n") {
-                      began = true;
-                  }
-              }
-              else {
-                  if(ch === "\n") {
-                    //console.log(currentVal) --> parse here 
-                    // var obj = JSON.parse(currentVal);
-                    // console.log(obj.joyValues);
-                    myParse(currentVal);
-                    currentVal = ""
-                  }
-                  else {
-                      currentVal += ch
-                  }
-              }
-          }
-       }
+        console.log(value);
+        animationClose();
+      }
     }
 };
 
 let images = new Array();
-    images = [
-        "../static/images/Group 9.svg",
-        "../static/images/Group 8.svg",
-        "../static/images/Group 7.svg",
-        "../static/images/Group 6.svg",
-        "../static/images/Group 5.svg",
-        "../static/images/Group 4.svg",
-        "../static/images/Group 3.svg",
-        "../static/images/Group 3.svg",
-        "../static/images/Group 3.svg",
-        "../static/images/Group 4.svg",
-        "../static/images/Group 5.svg",
-        "../static/images/Group 6.svg",
-        "../static/images/Group 7.svg",
-        "../static/images/Group 8.svg",
-        "../static/images/Group 9.svg"
-    ];
-    
+images = [
+    "../static/images/Group 9.svg",
+    "../static/images/Group 8.svg",
+    "../static/images/Group 7.svg",
+    "../static/images/Group 6.svg",
+    "../static/images/Group 5.svg",
+    "../static/images/Group 4.svg",
+    "../static/images/Group 3.svg",
+    "../static/images/Group 3.svg",
+    "../static/images/Group 3.svg",
+    "../static/images/Group 4.svg",
+    "../static/images/Group 5.svg",
+    "../static/images/Group 6.svg",
+    "../static/images/Group 7.svg",
+    "../static/images/Group 8.svg",
+    "../static/images/Group 9.svg"
+];
+
 let x = 0;
+function animationClose(){
+   console.log("animationClose")
+    let timesRun = 0;
+    let interval = setInterval(function(){
+        timesRun += 1;
+        if(timesRun == 15){
+            clearInterval(interval)
+        }
+        $("#sensor").attr("src", images[x]);
+        x++;
+        if(images.length == x){
+            x=0;
+        }
+    }, 90)
+}
+
 function plantClick(){
     $("#sensor").on("click", function () {
-        let timesRun = 0;
-        let interval = setInterval(function(){
-            timesRun += 1;
-            if(timesRun == 15){
-                clearInterval(interval)
-            }
-            $("#sensor").attr("src", images[x]);
-            x++;
-            if(images.length == x){
-                x=0;
-            }
-        }, 90)
+        animationClose();
     })
 }
 
-function myParse(){
-    var obj = JSON.parse(currentVal);
-}
+// function myParse(){
+//     var obj = JSON.parse(currentVal);
+// }
 
 $(document).ready(function(){
     plantClick();
