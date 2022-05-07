@@ -1,8 +1,6 @@
 #include <Arduino.h>
 #include <ArduinoJson.h>
 #include <ESP32Servo.h>
-// https://techtutorialsx.com/2017/04/27/esp32-creating-json-message/
-// https://arduinojson.org/v6/doc/upgrade/
 
 int threshold = 40;
 bool touch1detected = false;
