@@ -43,7 +43,7 @@ I followed this diagram to connect the touch sensors:
 * The wires then led to nylon conductive tape that was taped to the inside of the plant lobes (similar to where the sensors are located on a venus fly trap)
 
 ### 3D Printing-
-Instructions for 3D printing and assembling the servo motor attachments are found here: https://learn.adafruit.com/animatronic-cosplay-wings/3d-printing 
+Instructions for 3D printing and assembling the servo motor attachments are found <a href="https://learn.adafruit.com/animatronic-cosplay-wings/3d-printing">here</a>
 
 ### Laser Cutting-
 I created my own illustrator files for laser cutting the venus fly trap shapes that I wanted and the flower pot lid.
