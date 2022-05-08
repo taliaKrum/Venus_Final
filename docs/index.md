@@ -47,11 +47,30 @@ Instructions for 3D printing and assembling the servo motor attachments are foun
 
 LASER CUTTING-
 I created my own illustrator files for laser cutting the venus fly trap shapes that I wanted and the flower pot lid.
-* <img width="590" alt="Screen Shot 2022-05-07 at 7 03 59 PM" src="https://user-images.githubusercontent.com/69936719/167279872-f3d201ec-f552-46d9-9c26-3c5ae85c1391.png"> <img width="296" alt="Screen Shot 2022-05-07 at 7 03 40 PM" src="https://user-images.githubusercontent.com/69936719/167279874-b0631e2b-9a43-4218-ad68-3d171acb28ae.png">
-* <img width="1081" alt="Screen Shot 2022-05-07 at 7 03 19 PM" src="https://user-images.githubusercontent.com/69936719/167279882-4361ed6a-9631-4581-be4b-ec04ab4e646e.png">
+* <img width="400" alt="Screen Shot 2022-05-07 at 7 03 59 PM" src="https://user-images.githubusercontent.com/69936719/167279872-f3d201ec-f552-46d9-9c26-3c5ae85c1391.png"> <img width="296" alt="Screen Shot 2022-05-07 at 7 03 40 PM" src="https://user-images.githubusercontent.com/69936719/167279874-b0631e2b-9a43-4218-ad68-3d171acb28ae.png">
+* <img width="590" alt="Screen Shot 2022-05-07 at 7 03 19 PM" src="https://user-images.githubusercontent.com/69936719/167279882-4361ed6a-9631-4581-be4b-ec04ab4e646e.png">
 
 
 ## Software Setup 
+
+General Overview:
+* Languages used: Javascript, CSS, HTML, Python, C++
+* All files found in the src folder 
+* Website consists of the server.py file and everything in the static and templates directories 
+* The program for the ESP32 is main.cpp
+
+PLATFORMIO -
+* I used PlatformIO for this assignment in order to keep my files in the same place and to be able to work with version control and branches
+* I worked on Visual Studio Code
+
+FLASK - 
+* I created a website using Flask 
+* In order to start up the website, type python3 server.py into terminal 
+* I wanted to create a website that was very pleasing to the eye and could be an art piece. I also wanted the animations to be smoother and more satisfying than the ones I had in for the interactive devices project. I designed frames for the plant on Figma and used the setInterval() function to create a frame by frame animation. Whenever a user interacts with the sculpture the website responds as well. 
+
+CONNECTING EVERYTHING - 
+* Connect your ESP32 to your computer (power source and serial connection) 
+* Start up the website and click anywhere - a popup should appear, click the port for you ESP32
 
 ## Videos and Images
 
