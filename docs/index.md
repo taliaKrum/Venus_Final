@@ -68,7 +68,7 @@ General Overview:
 * In order to start up the website, type python3 server.py into terminal 
 * I wanted to create a website that was very pleasing to the eye and could be an art piece. I also wanted the animations to be smoother and more satisfying than the ones I had in for the interactive devices project. I designed frames for the plant on Figma and used the setInterval() function to create a frame by frame animation. Whenever a user interacts with the sculpture the website responds as well. 
 * <img width="1298" alt="167275231-a0ace6ac-5e4f-46e1-a2df-bc0fbec91634" src="https://user-images.githubusercontent.com/69936719/167280281-4d0e79b3-87f5-487a-99d1-8110d9a8e81f.png">
-* ![Group 1](https://user-images.githubusercontent.com/69936719/167280294-a73afd20-625f-46ec-ba3c-5ddfe712c299.png)
+* <img width="300" src="https://user-images.githubusercontent.com/69936719/167280294-a73afd20-625f-46ec-ba3c-5ddfe712c299.png">
 
 
 ### Connecting Everything - 
