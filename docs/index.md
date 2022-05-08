@@ -70,7 +70,6 @@ General Overview:
 * <img width="1298" alt="167275231-a0ace6ac-5e4f-46e1-a2df-bc0fbec91634" src="https://user-images.githubusercontent.com/69936719/167280281-4d0e79b3-87f5-487a-99d1-8110d9a8e81f.png">
 * <img width="300" src="https://user-images.githubusercontent.com/69936719/167280294-a73afd20-625f-46ec-ba3c-5ddfe712c299.png">
 
-
 ### Connecting Everything - 
 * Connect your ESP32 to your computer (power source and serial connection) 
 * Start up the website and click anywhere - a popup should appear, click the port for your ESP32
