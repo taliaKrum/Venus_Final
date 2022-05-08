@@ -73,7 +73,7 @@ General Overview:
 
 ### Connecting Everything - 
 * Connect your ESP32 to your computer (power source and serial connection) 
-* Start up the website and click anywhere - a popup should appear, click the port for you ESP32
+* Start up the website and click anywhere - a popup should appear, click the port for your ESP32
 
 # Videos and Images
 ![IMG_4356](https://user-images.githubusercontent.com/69936719/167280474-a9fd3c9f-7f1a-4d64-b315-1e53b8a7da76.jpeg)
