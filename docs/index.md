@@ -76,5 +76,10 @@ General Overview:
 * Start up the website and click anywhere - a popup should appear, click the port for you ESP32
 
 # Videos and Images
+![IMG_4356](https://user-images.githubusercontent.com/69936719/167280474-a9fd3c9f-7f1a-4d64-b315-1e53b8a7da76.jpeg)
+![IMG_4462](https://user-images.githubusercontent.com/69936719/167280493-e48280c7-9803-4af0-8e73-bb3aeb23897e.jpeg)
+![IMG_4472](https://user-images.githubusercontent.com/69936719/167280506-b7777f5b-9860-4063-8b56-8ee5bf4a4658.jpeg)
+![IMG_4474](https://user-images.githubusercontent.com/69936719/167280510-cec270cb-465e-4075-95de-065d08b04bae.jpeg)
+
 
 # Youtube Video!
