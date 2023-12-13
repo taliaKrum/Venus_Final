@@ -1,6 +1,6 @@
 # Venus_Final
 
-Creative Embedded Systems Module 5 - Final Project 
+Creative Embedded Systems Module 5 - Final Project - Website: https://taliakrum.github.io/Venus_Final/
 
 Project Specs: The final project is a chance for you to synthesize the topics we have covered so far in class (and the topics we will soon cover).
 
